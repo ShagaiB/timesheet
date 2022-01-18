@@ -134,10 +134,10 @@ export default function Home() {
                                         </thead>
                                         <tbody>
                                             {
-                                                users.map(user => {
-                                                    console.log(user.firstname);
-                                                   return <UserTable userData={user} key={user.id} />
-                                                })
+                                                users.map(user => (
+                                                    console.log(user.firstname),
+                                                   <UserTable userData={user} key={user.id} />
+                                                ))
 
                                             }
                                         </tbody>
